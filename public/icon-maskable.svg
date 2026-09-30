@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="mbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001F54" />
+      <stop offset="100%" stop-color="#0A3E8A" />
+    </linearGradient>
+    <linearGradient id="m-cyan-arr" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0A6CF1" />
+      <stop offset="60%" stop-color="#16C3FF" />
+      <stop offset="100%" stop-color="#80E5FF" />
+    </linearGradient>
+    <linearGradient id="m-gold-arr" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166" />
+      <stop offset="50%" stop-color="#FFB703" />
+      <stop offset="100%" stop-color="#FB8500" />
+    </linearGradient>
+    <radialGradient id="m-coin" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF275" />
+      <stop offset="65%" stop-color="#FFB703" />
+      <stop offset="100%" stop-color="#D97706" />
+    </radialGradient>
+  </defs>
+
+  <!-- Full-bleed background for maskable cropping -->
+  <rect width="512" height="512" fill="url(#mbg)"/>
+
+  <!-- Centered within 75% safe area -->
+  <g transform="translate(256, 256) scale(2.6) translate(-60, -60)">
+    <!-- Cyan Upper Arrow -->
+    <path d="M32 64 C32 46 44 32 64 32 C78 32 88 38 94 48 L84 48 C78 41 72 38 64 38 C48 38 38 48 38 62 C38 67 40 71 42 74 L33 80 C29 75 27 69 27 63" stroke="url(#m-cyan-arr)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M80 34 L96 48 L76 56 Z" fill="url(#m-cyan-arr)" />
+
+    <!-- Gold Lower Arrow -->
+    <path d="M88 56 C88 74 76 88 56 88 C42 88 32 82 26 72 L36 72 C42 79 48 82 56 82 C72 82 82 72 82 58 C82 53 80 49 78 46 L87 40 C91 45 93 51 93 57" stroke="url(#m-gold-arr)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path d="M40 86 L24 72 L44 64 Z" fill="url(#m-gold-arr)" />
+
+    <!-- Core Golden Transfer Coin -->
+    <circle cx="60" cy="60" r="14" fill="url(#m-coin)" stroke="#FFFFFF" stroke-width="2.5" />
+    <g stroke="#001F54" stroke-width="2.5" stroke-linecap="round">
+      <line x1="53" y1="60" x2="67" y2="60" />
+      <line x1="60" y1="53" x2="60" y2="67" />
+      <path d="M64 57 L67 60 L64 63" fill="none" />
+      <path d="M56 57 L53 60 L56 63" fill="none" />
+    </g>
+  </g>
+</svg>

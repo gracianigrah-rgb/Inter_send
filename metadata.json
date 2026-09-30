@@ -1,0 +1,6 @@
+{
+  "name": "intersend",
+  "description": "intersend - Transferts d'argent inter-opérateurs Mobile Money en Afrique (Wave, Orange, MTN, Moov, Trésor Money).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
